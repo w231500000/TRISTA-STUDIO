@@ -1,0 +1,449 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;   
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    padding: 30pt;  
+    z-index: 100;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin:center;
+    display: inline-block;  
+    animation: scaleUp 0.7s ease-in-out forwards;  
+}
+
+#headertext{
+    color: white;
+    transform: translate(-50%, -50%);
+    margin: 1% 48%;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0px;
+    opacity: 0;
+    font-weight: 700;
+    animation: scaleUp 0.7s ease-in-out forwards;
+}
+@keyframes scaleUp {
+    0% {
+        font-size: 0px; /* 初始大小 */
+        opacity: 0;
+    }
+    100% {
+        font-size: 30px; /* 放大 */
+        opacity: 1;
+    }
+}
+
+.content{
+    padding: 10px;
+    margin: 10px;
+    width: 100vw;
+    height: 600px;
+    position: absolute;
+}
+
+.footer{
+    height: 200px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.footer-box1,.footer-box2,.footer-box3{
+    width: 33%;
+    margin: 20px 50px;
+}
+
+a {text-decoration: none} 
+a:link {color:white}
+a:visited {color:white}
+a:active {color:#fdd80d}
+a:hover {color:#fdd80d}
+
+
+
+.con1{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/4KoYLUA.jpeg);
+    background-size: 120%;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.con1:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: 130%;
+}
+
+.con2{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/05GCCrd.jpeg);
+    background-size: 120%;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.con2:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: 130%;
+}
+
+.con3{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/PoOrUgM.jpeg);
+    background-size: 120%;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.con3:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: 130%;
+}
+
+.con4{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/zLcjB14.png);
+    background-size: 180%;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.con4:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: 200%;
+}
+
+.con5{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/fMwVhzz.jpeg);
+    background-size: 130%;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.con5:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: 140%;
+}
+
+.tilte{
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    top:40%;
+    opacity: 0%;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.tilte:hover{
+   opacity: 100%;
+   cursor: pointer;
+}
+
+.mid1{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/4KoYLUA.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.mid1:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.mid2{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/05GCCrd.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.mid2:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.mid3{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/PoOrUgM.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.mid3:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.mid4{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/zLcjB14.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.mid4:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.mid5{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-image: url(https://i.imgur.com/fMwVhzz.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.mid5:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.mid-btn{
+    width:220px; 
+    height:40px; 
+    border:1px; 
+    border-color: white; 
+    border-style: solid;
+    border-radius:30px;
+    color: white;
+    font-size: 16px;
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    background-color:transparent;
+    position: relative; 
+    top: 70%;
+    box-shadow: 0 0 10px gray;
+    transition-duration: 1s;
+}
+
+.mid-btn:hover{
+    border-color: #afacfb;
+    color: #afacfb;
+}
+
+.page1-box1, .page1-box2, .page1-box3, .page1-box4, .page1-box5{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    text-align: center;
+}
+
+.page1-btn{
+    border-radius:30px;
+    color: #afacfb;
+    font-size: 16px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color:white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transition-duration: 1s;
+}
+    
+.page1-btn:hover{
+    box-shadow: 0 0 10px #afacfb;
+}
+
+.page2-box{
+    display: flex;   
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+
+.lightbox-open{
+    width: 60px; 
+    height: 60px;
+    position: fixed; 
+    top: 20px;
+    right: 40px;
+    z-index: 1000;
+    cursor: pointer;
+}
+ 
+  /* 關閉 Lightbox 按鈕的位置及樣式 */
+.lightbox-close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.lightbox-test {
+    /* 設定好背景層的樣式以及位置 */
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    display: none;
+    z-index: 1000;
+    
+    .content{
+        /* 設定內容的樣式及位置(白底區塊) */
+        width: 100%;
+        height: 50%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;        
+        position: relative;
+        bottom: 0px;
+        text-align: center; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: end;
+        justify-content: center;
+        box-sizing: border-box;
+        }
+    
+        a { text-decoration: none } 
+        a:link {color:white}
+        a:visited {color:white}
+        a:active {color:#fdd80d}
+        a:hover {color:#fdd80d}
+     
+  }
+  
+.lightbox-logo{
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    position: relative; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content:center;
+}
+
+/* 輪播特效 */
+/* 箭頭 */
+.owl-nav{
+    position: absolute;
+    top: 43%;
+    width: 100%;
+}
+  
+.owl-prev{
+    position: absolute;
+    left: 20px;           
+}
+  
+.owl-next{
+    position: absolute;
+    right: 20px;
+}
+
+.owltitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(180, 180, 180);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.owltext{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(180, 180, 180);
+    font-size: 25px;
+    font-weight: 500;
+  }
+/* 圖片 */
+.photo123{
+    background-color: rgb(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    background-position: center;
+    transition-duration: 1s;
+    background-repeat: no-repeat;
+}
+
+.photo123:hover{   
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: 110%;
+}
+/* 縮圖 */
+.hoverOuterDiv{
+    position: relative; /* hoverDiv  層能相對定位 */
+    display: inline-block;
+}
+
+.hoverDiv{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hoverOuterDiv:hover .hoverDiv{
+    opacity: 1;
+}
+
+.carousel-container {
+    position: relative;
+    width: 60%;
+    overflow: hidden;    
+}
+
+.owl-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;  
+}
+
+.owl-dots{
+    margin: 10px;
+}
+
+/* 滾動到頁面頂部 */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: none; /* 初始隱藏 */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+.top-button:hover {
+    background-color: gray; /* 懸停效果 */
+}

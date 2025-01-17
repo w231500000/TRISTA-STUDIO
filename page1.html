@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRISTA STUDIO 平面設計</title>
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+
+    <style>
+        .owl-theme .owl-nav .owl-next,
+        .owl-theme .owl-nav .owl-prev {
+            background: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .owl-theme .owl-nav .owl-next:hover,
+        .owl-theme .owl-nav .owl-prev:hover {
+            background: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="headertext" style="width: 500px;"><a href="./index.html">TRISTA STUDIO</a></div>
+    </header>
+
+    <div>
+        <a class="lightbox-open" onclick="display()"><img style="height: 80px;" src="https://i.imgur.com/DvUh9B9.png"></a>
+    </div>
+
+    <div class="lightbox-test">
+        <ul type="none" class="content">
+            <li style="padding: 20px;"><a href="./index.html">TRISTA STUDIO</a></li>
+            <li style="padding: 20px;"><a href="./page1.html">平面設計</a></li>
+            <li style="padding: 20px;"><a href="./page2.html">動畫藝術</a></li>
+            <li style="padding: 20px;"><a href="./page3.html">影音剪輯</a></li>
+            <li style="padding: 20px;"><a href="./page4.html">3D設計</a></li>
+            <li style="padding: 20px;"><a href="./page5.html">UI設計</a></li>
+        </ul>
+
+        <div class="lightbox-logo">
+            <div style="padding: 15px;"><a href="https://line.me/ti/p/om2qqUoR_l"><img src="https://i.imgur.com/KnF9gvM.png"
+                        style="width: 25px;"></a></div>
+            <div style="padding: 15px;"><a href="https://www.facebook.com/profile.php?id=100010496344084"><img
+                        src="https://i.imgur.com/4udZova.png" style="width: 25px;"></a></div>
+            <div style="padding: 15px;"><a href="https://www.instagram.com/w2315000/?hl=zh-tw"><img
+                        src="https://i.imgur.com/Bm19l6d.png" style="width: 25px;"></a></div>
+        </div>
+
+        <a class="lightbox-close" onclick="dismiss()"><img style="height: 40px;" src="https://i.imgur.com/9PoOOeY.png"></a>
+    </div>
+
+
+    <div
+        style="height: 500px; width: auto; background-image: url(https://i.imgur.com/4KoYLUA.jpeg); background-size: cover; background-position: center;">
+    </div>
+
+    <div
+        style="height: 500px; width: auto; background-image: url(https://i.imgur.com/97WuhXe.jpeg); background-size: cover; padding: 20px; display: flex; flex-direction: row;">
+        <div class="page1-box1"
+            style="height: auto; width: 20%; padding: 30px 50px; display: flex; justify-content: center; align-items: center; margin: auto">
+            <img src="https://i.imgur.com/PGxQ8TW.png" alt="" style="height: 100px; width: 100px;">
+            <h2 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #afacfb;"><span
+                    style="color: #fdd80d;">廣告設計</span> ADVERTISING</h2>
+            <h4 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: white;">Poster 海報設計<br>Outdoor
+                Advertising 戶外展示<br>Banner、DM 文宣設計</h4>
+            <div onclick="scrollTest('.div1')" class="page1-btn" style="width:220px; height:40px; cursor: pointer;">
+                Read More
+            </div>
+        </div>
+
+        <div class="page1-box2"
+            style="height: auto; width: 20%; padding: 30px 50px; display: flex; justify-content: center; align-items: center; margin: auto">
+            <img src="https://i.imgur.com/Nh049nW.png" alt="" style="height: 100px; width: 100px;">
+            <h2 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #afacfb;"><span
+                    style="color: #fdd80d;">周邊設計</span> MERCH </h2>
+            <h4 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: white;">Calendar
+                年曆<br>Houseware 居家用品<br>Others 其他用品</h4>
+            <div onclick="scrollTest('.div2')" class="page1-btn" style="width:220px; height:40px; cursor: pointer;">
+                Read More
+            </div>
+        </div>
+
+        <div class="page1-box3"
+            style="height: auto; width: 20%; padding: 30px 50px; display: flex; justify-content: center; align-items: center; margin: auto">
+            <img src="https://i.imgur.com/oDiNETj.png" alt="" style="height: 100px; width: 100px;">
+            <h2 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #afacfb;"><span
+                    style="color: #fdd80d;">文字設計</span> TITLE </h2>
+            <h4 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: white;">Typography
+                標準字設計<br>Copywriting 文字藝術<br>Calligraphy 書法藝術字體</h4>
+            <div onclick="scrollTest('.div3')" class="page1-btn" style="width:220px; height:40px; cursor: pointer;">
+                Read More
+            </div>
+        </div>
+
+        <div class="page1-box4"
+            style="height: auto; width: 20%; padding: 30px 50px; display: flex; justify-content: center; align-items: center; margin: auto">
+            <img src="https://i.imgur.com/InAzubw.png" alt="" style="height: 100px; width: 100px;">
+            <h2 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #afacfb;"><span
+                    style="color: #fdd80d;">書籍設計</span> BOOK </h2>
+            <h4 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: white;">Book Cover
+                封面設計<br>Journalism 雜誌編排設計<br>Typegraphy 版式設計</h4>
+            <div onclick="scrollTest('.div4')" class="page1-btn" style="width:220px; height:40px; cursor: pointer;">
+                Read More
+            </div>
+        </div>
+
+        <!-- <div class="page1-box5"
+            style="height: 400px; width: 20%; padding: 30px 50px; display: flex; justify-content: center; align-items: center; margin: auto">
+            <img src="https://i.imgur.com/8e3jslZ.png" alt="" style="height: 100px; width: 100px;">
+            <h2 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #afacfb;"><span
+                    style="color: #fdd80d;">貼圖設計</span> STICKER </h2>
+            <h4 style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: white;">Illustration
+                插畫<br>Graffiti 塗鴉藝術<br>Icon Design 圖示設計</h4>
+            <div class="page1-btn" style="width:220px; height:40px;">
+                Read More
+            </div>
+        </div> -->
+    </div>
+
+    <div class="div1"
+        style="height: 1000px; display:flex; justify-content:center; align-items:center; flex-direction: column;">
+        <span
+            style="color: rgb(135, 130, 246); font-family: Arial, Helvetica, sans-serif; font-weight: 700; padding: 20px; font-size: 30px;">廣告設計
+            ADVERTISING</span>
+        <div class="carousel-container">
+            <div class="owl-carousel owl-theme" style="height: 800px;">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/MERTZQo.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/VwaQX8w.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/uE7PL5i.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/odhrQtP.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/uG9w8DU.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/Rl5FUvy.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/XJH8bDo.jpeg">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="div2"
+        style="height: 1000px; display:flex; justify-content:center; align-items:center; flex-direction: column; background-color: black;">
+        <span
+            style="color: rgb(135, 130, 246); font-family: Arial, Helvetica, sans-serif; font-weight: 700; padding: 20px; font-size: 30px;">周邊設計
+            MERCHANDISE</span>
+        <div class="carousel-container">
+            <div class="owl-carousel owl-theme" style="height: 800px;">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/xn3Z1we.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/qUDx7Td.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/Ya3tNMR.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/ITYO7QY.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/5zIZeIc.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/dWXU8Np.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <div class="div3"
+        style="height: 1000px; display:flex; justify-content:center; align-items:center; flex-direction: column;">
+        <span
+            style="color: rgb(135, 130, 246); font-family: Arial, Helvetica, sans-serif; font-weight: 700; padding: 20px; font-size: 30px;">文字設計
+            TITLE DESIGN</span>
+        <div class="carousel-container">
+            <div class="owl-carousel owl-theme" style="height: 800px;">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/UKUhvLv.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/WYKdSVX.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/ARXGQ6A.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/BxGGtvh.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <div class="div4"
+        style="height: 1000px; display:flex; justify-content:center; align-items:center; flex-direction: column; background-color: black;">
+        <span
+            style="color: rgb(135, 130, 246); font-family: Arial, Helvetica, sans-serif; font-weight: 700; padding: 20px; font-size: 30px;">書籍設計
+            BOOK</span>
+        <div class="carousel-container">
+            <div class="owl-carousel owl-theme" style="height: 800px;">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/IdN2HCY.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/iJ4M3Oz.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/X2R0acY.jpeg">
+                <img style="object-fit: cover; height: 750px" src="https://i.imgur.com/ZdycTBD.jpeg">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-box1">
+            <h2 style="font-size: 20px; font-style: italic; color: white;">Welcome to TRISTA STUDIO!</h2>
+            <h3 style="font-size: 20px; color: gray;">© 2023 by TRISTA STUDIO.</h3>
+        </div>
+
+        <div class="footer-box2">
+            <h3 style="font-size: 20px; font-style: normal; color: gray;">Contact</h3>
+            <h3 style="font-size: 20px; font-style: normal; color: white;">w231500000@gmail.com</h3>
+        </div>
+
+        <div class="footer-box3">
+            <h3 style="font-size: 20px; font-style: normal; color: gray;">Social</h3>
+            <h3 style="font-size: 20px; font-style: normal; color: white; text-decoration: underline;"><a
+                    href="https://www.facebook.com/profile.php?id=100010496344084">Facebook</a></h3>
+            <h3 style="font-size: 20px; font-style: normal; color: white; text-decoration: underline;"><a
+                    href="https://line.me/ti/p/om2qqUoR_l">LINE</a></h3>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        function scrollTest(target) {
+            let test = $(target).offset().top;
+            $('html, body').animate({
+                scrollTop: test
+            }, 1000);
+
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,             // 顯示一個項目
+                loop: true,           // 循環播放
+                autoplay: true,       // 自動播放
+                autoplayTimeout: 10000,// 自動播放間隔 (毫秒)
+                dots: true,           // 顯示圓點指示器
+                nav: true,
+                navText: ['<span class="owl-prev"><img style="height: 40px; object-fit:contain;" src="https://i.imgur.com/5P5NSDN.png"></span>', '<span class="owl-next"><img style="height: 40px; object-fit:contain; " src="https://i.imgur.com/pHsTUW8.png"></span>']
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        function display() {
+            $('.lightbox-test').fadeIn();
+        }
+
+        function dismiss() {
+            $('.lightbox-test').fadeOut();
+        }
+    </script>
+
+    <script>
+        let lastScrollTop = 0; // 記錄上次滾動的位置
+        const header = document.getElementById('header'); // 獲取Header元素
+
+        window.addEventListener('wheel', function (event) {
+            let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+            if (currentScroll < lastScrollTop) {
+                // 滾輪向上（滾動位置變小），顯示Header
+                header.style.transform = 'translateY(0)';
+            } else {
+                // 滾輪向下（滾動位置變大），隱藏Header
+                header.style.transform = 'translateY(-100%)';
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 1 : currentScroll; // 確保滾動位置不小於0
+        });
+    </script>
+
+    <button class="top-button" id="topBtn">↿ TOP</button>
+
+    <script>
+        // 獲取按鈕
+        const topBtn = document.getElementById("topBtn");
+
+        // 當用戶向下滾動 20px 時顯示按鈕
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+
+        // 點擊按鈕時滾動到頂部
+        topBtn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // 平滑滾動
+            });
+        };
+    </script>
+
+
+
+</body>
+
+</html>
