@@ -1,45 +1,52 @@
-html, body {
-    width: 100%;
+html,
+body {
+    width: 100vw;
     height: 100vh;
-    margin: 0;   
+    margin: 0;
+    overflow-x: clip;
+    position: relative;
 }
 
-#header{
+.header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 40px;
     background-color: black;
-    padding: 30pt;  
+    padding: 32px;
     z-index: 100;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    transform-origin:center;
-    display: inline-block;  
-    animation: scaleUp 0.7s ease-in-out forwards;  
+    transform-origin: center;
+    display: inline-block;
+    animation: scaleUp 0.7s ease-in-out forwards;
 }
 
-#headertext{
+.headertext {
     color: white;
     transform: translate(-50%, -50%);
-    margin: 1% 48%;
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
+    margin: 1% 48.4%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0px;
     opacity: 0;
     font-weight: 700;
     animation: scaleUp 0.7s ease-in-out forwards;
 }
+
 @keyframes scaleUp {
     0% {
-        font-size: 0px; /* 初始大小 */
+        font-size: 0px;
+        /* 初始大小 */
         opacity: 0;
     }
+
     100% {
-        font-size: 30px; /* 放大 */
+        font-size: 30px;
+        /* 放大 */
         opacity: 1;
     }
 }
 
-.content{
+.content {
     padding: 10px;
     margin: 10px;
     width: 100vw;
@@ -47,7 +54,12 @@ html, body {
     position: absolute;
 }
 
-.footer{
+.content li {
+    padding: 20px;
+}
+
+.footer {
+    width: 100vw;
     height: 200px;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -55,20 +67,106 @@ html, body {
     display: flex;
 }
 
-.footer-box1,.footer-box2,.footer-box3{
+.footer-box1,
+.footer-box2,
+.footer-box3 {
     width: 33%;
     margin: 20px 50px;
 }
 
-a {text-decoration: none} 
-a:link {color:white}
-a:visited {color:white}
-a:active {color:#fdd80d}
-a:hover {color:#fdd80d}
+.footer-box1 h2 {
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
 
+.footer-box1 h3 {
+    font-size: 20px;
+    color: gray;
+}
 
+.footer-box2 h2 {
+    font-size: 20px;
+    font-style: normal;
+    color: gray;
+}
 
-.con1{
+.footer-box2 h3 {
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+}
+
+.footer-box3 h2 {
+    font-size: 20px;
+    font-style: normal;
+    color: gray;
+}
+
+.footer-box3 h3 {
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none
+}
+
+a:link {
+    color: white
+}
+
+a:visited {
+    color: white
+}
+
+a:active {
+    color: #fdd80d
+}
+
+a:hover {
+    color: #fdd80d
+}
+
+.topcontent-text {
+    padding: 10px;
+    width: auto;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topcontent-bg {
+    height: 660px;
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+}
+
+.topcontent {
+    margin: 0px auto;
+    width: 1600px;
+    height: 600px;
+}
+
+.topcontent ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainli {
+    width: 800px;
+    height: 600px;
+}
+
+.otherli {
+    width: 400px;
+    height: 600px;
+}
+
+.con1 {
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/4KoYLUA.jpeg);
@@ -77,12 +175,12 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.con1:hover{   
+.con1:hover {
     background-color: rgb(0, 0, 0, 0.6);
     background-size: 130%;
 }
 
-.con2{
+.con2 {
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/05GCCrd.jpeg);
@@ -91,12 +189,12 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.con2:hover{   
+.con2:hover {
     background-color: rgb(0, 0, 0, 0.6);
     background-size: 130%;
 }
 
-.con3{
+.con3 {
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/PoOrUgM.jpeg);
@@ -105,12 +203,12 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.con3:hover{   
+.con3:hover {
     background-color: rgb(0, 0, 0, 0.6);
     background-size: 130%;
 }
 
-.con4{
+.con4 {
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/zLcjB14.png);
@@ -119,12 +217,12 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.con4:hover{   
+.con4:hover {
     background-color: rgb(0, 0, 0, 0.6);
     background-size: 200%;
 }
 
-.con5{
+.con5 {
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/fMwVhzz.jpeg);
@@ -133,29 +231,33 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.con5:hover{   
+.con5:hover {
     background-color: rgb(0, 0, 0, 0.6);
     background-size: 140%;
 }
 
-.tilte{
+.tilte {
     text-align: center;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: relative;
-    top:40%;
+    top: 40%;
     opacity: 0%;
     transition-duration: 1s;
     cursor: pointer;
 }
 
-.tilte:hover{
-   opacity: 100%;
-   cursor: pointer;
+.tilte:hover {
+    opacity: 100%;
+    cursor: pointer;
 }
 
-.mid1{
+.mid1 {
+    width: auto;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/4KoYLUA.jpeg);
@@ -164,11 +266,15 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.mid1:hover{   
+.mid1:hover {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
-.mid2{
+.mid2 {
+    width: auto;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/05GCCrd.jpeg);
@@ -177,11 +283,15 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.mid2:hover{   
+.mid2:hover {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
-.mid3{
+.mid3 {
+    width: auto;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/PoOrUgM.jpeg);
@@ -190,11 +300,15 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.mid3:hover{   
+.mid3:hover {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
-.mid4{
+.mid4 {
+    width: auto;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/zLcjB14.png);
@@ -203,11 +317,15 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.mid4:hover{   
+.mid4:hover {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
-.mid5{
+.mid5 {
+    width: auto;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-image: url(https://i.imgur.com/fMwVhzz.jpeg);
@@ -216,78 +334,342 @@ a:hover {color:#fdd80d}
     transition-duration: 1s;
 }
 
-.mid5:hover{   
+.mid5:hover {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
-.mid-btn{
-    width:220px; 
-    height:40px; 
-    border:1px; 
-    border-color: white; 
+.mid-btn {
+    width: 220px;
+    height: 40px;
+    border: 1px;
+    border-color: white;
     border-style: solid;
-    border-radius:30px;
+    border-radius: 30px;
     color: white;
     font-size: 16px;
-    display:flex; 
-    justify-content:center;
-    align-items:center;
-    background-color:transparent;
-    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
     top: 70%;
     box-shadow: 0 0 10px gray;
     transition-duration: 1s;
 }
 
-.mid-btn:hover{
+.mid-btn:hover {
     border-color: #afacfb;
     color: #afacfb;
 }
 
-.page1-box1, .page1-box2, .page1-box3, .page1-box4, .page1-box5{
+.page1-box {
+    height: 500px;
+    width: auto;
+    background-image: url(https://i.imgur.com/97WuhXe.jpeg);
+    background-size: cover;
+    padding: 20px 100px;
     display: flex;
-    justify-content: center;    
+    flex-direction: row;
+}
+
+.page1-box1,
+.page1-box2,
+.page1-box3,
+.page1-box4,
+.page1-box5 {
+    height: auto;
+    width: 20%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 
-.page1-btn{
-    border-radius:30px;
+.page1-btn {
+    border-radius: 30px;
     color: #afacfb;
-    font-size: 16px; 
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color:white;
+    background-color: white;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     transition-duration: 1s;
 }
-    
-.page1-btn:hover{
+
+.page1-btn:hover {
     box-shadow: 0 0 10px #afacfb;
 }
 
-.page2-box{
-    display: flex;   
+.div1,
+.div3 {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    text-align: left;
+}
+
+.div2,
+.div4 {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.div-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(135, 130, 246);
+    font-weight: 700;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.page2-bg {
+    height: 400px;
+    width: auto;
+    background-image: url(https://i.imgur.com/97WuhXe.jpeg);
+    background-size: cover;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.page2-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+
+}
+
+.page2-div1 {
+    height: 800px;
+    background-color: white;
+    padding: 50px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .page2-div1-title {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .owl-carousel {
+        width: 1250px;
+        padding: 5px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 300px;
+        }
+    }
+}
+
+.page2-div2 {
+    height: 800px;
+    background-color: black;
+    padding: 50px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .page2-div2-title {
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+.page3-div1 {
+    height: 3000px;
+    width: auto;
+    background-color: white;
+    padding: 50px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .page3-div1-title {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .page3-div1-video {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+}
+
+.page3-div2 {
+    height: 1550px;
+    width: auto;
+    background-color: black;
+    padding: 50px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .page3-div2-title {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .page3-div2-video {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+}
+
+.page3-div3 {
+    height: 800px;
+    width: auto;
+    background-color: white;
+    padding: 50px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .page3-div3-title {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .page3-div3-video {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
 }
 
 
+.page4-div1,
+.page4-div2,
+.page4-div3,
+.page4-div4 {
+    height: 900px;
+    width: 100%;
+    margin: 100px 0px;
 
+    .owl-carousel {
+        height: auto;
+        width: auto;
+        background-color: white;
+        margin: 10px 100px;
+        position: relative;
 
-.lightbox-open{
-    width: 60px; 
+        .photo123 {
+            height: 700px;
+        }
+    }
+
+    .hoverOuter {
+        position: relative;
+        display: flex;
+        margin: 10px 100px;
+
+        .owltitletext {
+            position: absolute;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            .owltitle {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(180, 180, 180);
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .owltext {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(180, 180, 180);
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.page5-div1 {
+    height: 1600px;
+    width: auto;
+    background-color: white;
+    padding: 50px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .page5-div1-title {
+        width: 1030px;
+        text-align: center;
+    }
+
+    .page5-div1-item {
+        width: 1030px;
+        margin: 20px;
+    }
+}
+
+.page5-div2 {
+    width: 100%;
+    height: 600px;
+    background-image: url(https://i.imgur.com/H9oGSd0.jpg);
+    margin: 0px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .page5-div2-item {
+        width: 25%;
+        height: 50%;
+        position: relative;
+        background-image: url(https://i.imgur.com/8CVeyej.jpg);
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.lightbox-open {
+    width: 60px;
     height: 60px;
-    position: fixed; 
+    position: fixed;
     top: 20px;
     right: 40px;
     z-index: 1000;
     cursor: pointer;
 }
- 
-  /* 關閉 Lightbox 按鈕的位置及樣式 */
+
+/* 關閉 Lightbox 按鈕的位置及樣式 */
 .lightbox-close {
     display: block;
     width: 40px;
@@ -304,79 +686,82 @@ a:hover {color:#fdd80d}
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,.9);
+    background: rgba(0, 0, 0, .9);
     display: none;
     z-index: 1000;
-    
-    .content{
+
+    .content {
         /* 設定內容的樣式及位置(白底區塊) */
         width: 100%;
         height: 50%;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        margin: auto;        
+        margin: auto;
         position: relative;
         bottom: 0px;
-        text-align: center; 
-        display: flex; 
-        flex-direction: row; 
+        text-align: center;
+        display: flex;
+        flex-direction: row;
         align-items: end;
         justify-content: center;
         box-sizing: border-box;
-        }
-    
-        a { text-decoration: none } 
-        a:link {color:white}
-        a:visited {color:white}
-        a:active {color:#fdd80d}
-        a:hover {color:#fdd80d}
-     
-  }
-  
-.lightbox-logo{
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    a:link {
+        color: white
+    }
+
+    a:visited {
+        color: white
+    }
+
+    a:active {
+        color: #fdd80d
+    }
+
+    a:hover {
+        color: #fdd80d
+    }
+
+}
+
+.lightbox-logo {
     width: 100%;
     height: 10%;
     margin: auto;
-    position: relative; 
-    display: flex; 
-    flex-direction: row; 
+    position: relative;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 /* 輪播特效 */
 /* 箭頭 */
-.owl-nav{
+.owl-nav {
     position: absolute;
     top: 43%;
     width: 100%;
 }
-  
-.owl-prev{
+
+.owl-prev {
     position: absolute;
-    left: 20px;           
-}
-  
-.owl-next{
-    position: absolute;
-    right: 20px;
+    left: 10px;
 }
 
-.owltitle{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(180, 180, 180);
-    font-size: 40px;
-    font-weight: 700;
+.owl-next {
+    position: absolute;
+    right: 10px;
 }
 
-.owltext{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(180, 180, 180);
-    font-size: 25px;
-    font-weight: 500;
-  }
+
+
 /* 圖片 */
-.photo123{
+.photo123 {
     background-color: rgb(0, 0, 0, 0);
     background-blend-mode: multiply;
     background-size: 100%;
@@ -385,43 +770,53 @@ a:hover {color:#fdd80d}
     background-repeat: no-repeat;
 }
 
-.photo123:hover{   
+.photo123:hover {
     background-color: rgb(0, 0, 0, 0.6);
     background-size: 110%;
 }
+
 /* 縮圖 */
-.hoverOuterDiv{
-    position: relative; /* hoverDiv  層能相對定位 */
+.hoverOuterDiv {
+    position: relative;
+    /* hoverDiv  層能相對定位 */
     display: inline-block;
 }
 
-.hoverDiv{
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.hoverDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.hoverOuterDiv:hover .hoverDiv{
+.hoverOuterDiv:hover .hoverDiv {
     opacity: 1;
 }
 
 .carousel-container {
+    height: 800px;
     position: relative;
     width: 60%;
-    overflow: hidden;    
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        height: 750px;
+    }
 }
+
 
 .owl-carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;  
+    transition: transform 0.5s ease-in-out;
 }
 
-.owl-dots{
+.owl-dots {
+    height: 2px;
     margin: 10px;
 }
 
@@ -430,9 +825,10 @@ a:hover {color:#fdd80d}
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    display: none; /* 初始隱藏 */
+    display: none;
+    /* 初始隱藏 */
     background-color: rgb(0, 0, 0);
     color: white;
     border-color: white;
@@ -441,9 +837,16 @@ a:hover {color:#fdd80d}
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s;
-    z-index: 100;
+    z-index: 500;
 }
 
 .top-button:hover {
-    background-color: gray; /* 懸停效果 */
+    background-color: gray;
+    /* 懸停效果 */
+}
+
+/* 当按钮可见时 */
+.top-button.visible {
+    display: block;
+    opacity: 1;
 }
